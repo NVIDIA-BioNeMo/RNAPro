@@ -253,7 +253,7 @@ We thank Stanford Das Lab, HHMI, the co-hosts and winners of the Stanford RNA 3D
 
 The first release of RNAPro was developed through a collaboration between NVIDIA and the Das Lab:
 
-- **NVIDIA:** Youhan Lee, Christian Munley, Theo Viel, Emine Kucukbenli
+- **NVIDIA:** Youhan Lee, Christian Munley, Theo Viel, Emine Küçükbenli
 - **Das Lab (Stanford):** Rhiju Das, Chaitanya K. Joshi (Cambridge during development; now Stanford Das Lab)
 
 We also thank everyone at NVIDIA and the Das Lab who contributed to the development and release.
