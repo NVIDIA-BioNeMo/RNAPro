@@ -249,6 +249,15 @@ RNAPro uses a frozen pre-trained RNA foundation model RibonanzaNet2 as an encode
 
 We thank Stanford Das Lab, HHMI, the co-hosts and winners of the Stanford RNA 3D Folding Kaggle competition for their collaboration in this research.
 
+### Contributors
+
+The first release of RNAPro was developed through a collaboration between NVIDIA and the Das Lab:
+
+- **NVIDIA:** Youhan Lee, Christian Munley, Theo Viel, Emine Kucukbenli
+- **Das Lab (Stanford):** Rhiju Das, Chaitanya K. Joshi (Cambridge during development; now Stanford Das Lab)
+
+We also thank everyone at NVIDIA and the Das Lab who contributed to the development and release.
+
 
 ## License
 
