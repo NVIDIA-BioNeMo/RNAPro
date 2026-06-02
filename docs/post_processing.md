@@ -2,7 +2,7 @@
 
 RNAPro predictions can have incorrect O2′ placement. Run the step below before all-atom LDDT or any analysis that needs correct ribose atoms.
 
-The script removes O2′ and rebuilds it with [Arena](https://github.com/pylelab/Arena). Backbone and base atoms are not moved.
+The script removes O2′ and rebuilds it with [Arena](https://doi.org/10.5281/zenodo.7566670). Backbone and base atoms are not moved.
 
 ---
 
@@ -14,10 +14,14 @@ The script removes O2′ and rebuilds it with [Arena](https://github.com/pylelab
    pip install biopython
    ```
 
-2. **Arena** — required for O2' reconstruction. Install and compile:
+2. **Arena** — required for O2' reconstruction. Download the source archive from
+   the [Zenodo record](https://doi.org/10.5281/zenodo.7566670) (released under the
+   Creative Commons Attribution 4.0 International license), extract it into a
+   folder named `Arena`, and compile:
 
    ```bash
-   git clone https://github.com/pylelab/Arena.git
+   # Download the archive from https://doi.org/10.5281/zenodo.7566670, then:
+   unzip Arena-*.zip -d Arena     # adjust to the downloaded archive name
    cd Arena
    make Arena
    ```
@@ -86,7 +90,9 @@ def look_for_arena():
             return path
 
     cmds = [
-        "git clone https://github.com/pylelab/Arena.git",
+        "# Download the Arena source archive (CC BY 4.0) from:",
+        "#   https://doi.org/10.5281/zenodo.7566670",
+        "unzip Arena-*.zip -d Arena   # adjust to the downloaded archive name",
         "cd Arena",
         "make Arena",
     ]
@@ -262,11 +268,11 @@ python3 fix_o2prime.py complex.pdb --strip-nonrna --verbose
 |------|-------------|
 | `--outdir DIR` | Write fixed files to `DIR` instead of next to each input |
 | `--strip-nonrna` | Remove protein/ligand chains before Arena (output will not contain them) |
-| `--arena-option N` | Arena mode (default `5`; see [Arena README](https://github.com/pylelab/Arena)) |
+| `--arena-option N` | Arena mode (default `5`; see the [Arena documentation](https://doi.org/10.5281/zenodo.7566670)) |
 | `--verbose` | Print strip/rebuild counts per file |
 
 ---
 
 ### References
 
-- **Arena:** Zion R Perry, Anna Marie Pyle, Chengxin Zhang (2023). *Arena: rapid and accurate reconstruction of full atomic RNA structures from coarse-grained models.* Journal of Molecular Biology. [GitHub](https://github.com/pylelab/Arena) · [Zenodo](https://doi.org/10.5281/zenodo.7566670)
+- **Arena:** Zion R Perry, Anna Marie Pyle, Chengxin Zhang (2023). *Arena: rapid and accurate reconstruction of full atomic RNA structures from coarse-grained models.* Journal of Molecular Biology. Obtain Arena from the [Zenodo archive](https://doi.org/10.5281/zenodo.7566670) (Creative Commons Attribution 4.0 International).
