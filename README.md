@@ -245,18 +245,38 @@ RNAPro uses a frozen pre-trained RNA foundation model RibonanzaNet2 as an encode
 ```
 
 
+
 ## Acknowledgements
 
 We thank Stanford Das Lab, HHMI, the co-hosts and winners of the Stanford RNA 3D Folding Kaggle competition for their collaboration in this research.
 
-### Contributors
+For the full list of authors and contributors to the research, please refer to the preprint.
 
-The first release of RNAPro was developed through a collaboration between NVIDIA and the Das Lab:
+### Code Contributors
+
+We specifically thank the following people for direct code contributions to RNAPro:
 
 - **NVIDIA:** Youhan Lee, Christian Munley, Theo Viel, Emine Küçükbenli
 - **Das Lab (Stanford):** Rhiju Das, Chaitanya K. Joshi (Cambridge during development; now Stanford Das Lab)
 
-We also thank everyone at NVIDIA and the Das Lab who contributed to the development and release.
+
+## Citation
+
+If you use RNAPro, please cite the preprint:
+
+```bibtex
+@article{Lee2025.12.30.696949,
+  author = {Lee, Youhan and He, Shujun and Oda, Toshiyuki and Rao, G. John and Kim, Yehyun and Kim, Raehyun and Kim, Hyunjin and Heng, Cher Keng and Kowerko, Danny and Li, Haowei and Nguyen, Hoa and Sampathkumar, Arunodhayan and Enrique G{\'o}mez, Ra{\'u}l and Chen, Meng and Yoshizawa, Atsushi and Kuraishi, Shun and Ogawa, Kenji and Zou, Shuxian and Paullier, Alejo and Zhao, Bingkang and Chen, Huey-Long and Hsu, Tsu-An and Hirano, Tatsuya and Chiu, Wah and Gezelle, Jeanine G. and Haack, Daniel and Hong, Yibao and Jadhav, Shekhar and Koirala, Deepak and Kretsch, Rachael C and Lewicka, Anna and Li, Shanshan and Marcia, Marco and Piccirilli, Joseph and Rudolfs, Boris and Srivastava, Yoshita and Steckelberg, Anna-Lena and Su, Zhaoming and Toor, Navtej and Wang, Liu and Yang, Zi and Zhang, Kaiming and Zou, Jian and Baker, David and Chen, Shi-Jie and Demkin, Maggie and Favor, Andrew and Hummer, Alissa M and Joshi, Chaitanya K. and Kryshtafovych, Andriy and Kucukbenli, Emine and Miao, Zhichao and Moult, John and Munley, Christian and Reade, Walter and Viel, Theo and Westhof, Eric and Zhang, Sicheng and Das, Rhiju},
+  title = {Template-based RNA structure prediction advanced through a blind code competition},
+  elocation-id = {2025.12.30.696949},
+  year = {2025},
+  doi = {10.64898/2025.12.30.696949},
+  publisher = {Cold Spring Harbor Laboratory},
+  URL = {https://www.biorxiv.org/content/early/2025/12/30/2025.12.30.696949},
+  eprint = {https://www.biorxiv.org/content/early/2025/12/30/2025.12.30.696949.full.pdf},
+  journal = {bioRxiv}
+}
+```
 
 
 ## License
