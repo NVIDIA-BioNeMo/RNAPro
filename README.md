@@ -208,6 +208,10 @@ The script configures and forwards the following parameters to the CLI:
 - `--logger`: Logger to use by the inference runner (default: `logging`). Supports `logging` and `print`.
 - `--n_templates_inf`: Number of inferences to do with different template combinations (default: `5`).
 
+### Post-processing
+
+For O2' geometry correction, see the [post-processing guide](docs/post_processing.md).
+
 ### Acceleration
 
 Training and inference can be accelerated using various optimized kernels (e.g., cuEquivariance, Triton, and specialized LayerNorm/attention backends). Refer to the [Kernels Setup Guide](docs/kernels.md) for installation steps, supported options, and recommended configurations.
