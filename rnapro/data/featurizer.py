@@ -182,9 +182,7 @@ class Featurizer(object):
 
         idx_in_atom_indices = []
         for i in abc_atom_name:
-            if centre_atom.mol_type == "protein" and "N" not in token.atom_names:
-                return 0, [-1, -1, -1]
-            elif centre_atom.mol_type != "protein" and "C1'" not in token.atom_names:
+            if i not in token.atom_names:
                 return 0, [-1, -1, -1]
             idx_in_atom_indices.append(token.atom_names.index(i))
         # Protein/DNA/RNA always has frame
